@@ -1,0 +1,7 @@
+mamba env create -f GWAS.yml
+
+# Ó
+
+conda env create -f GWAS.yml
+
+conda activate GWAS
