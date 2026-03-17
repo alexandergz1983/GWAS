@@ -1,7 +1,8 @@
-mamba env create -f GWAS.yml
+git clone https://github.com/alexandergz1983/GWAS.git
 
-# Ó
+cd GWAS/
 
 conda env create -f GWAS.yml
 
 conda activate GWAS
+
