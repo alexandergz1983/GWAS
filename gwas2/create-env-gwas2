@@ -5,3 +5,12 @@ conda activate gwaslab
 cd examples/0_sample_data 
 ./download_roadmap.sh
 ./download_sample_data.sh
+
+cd 1_main_tutorial/
+curl -O http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz
+gunzip hg19.fa.gz
+
+mysumstats.harmonize(basic_check=False,
+                     ref_seq="/tu_ruta/1_main_tutorial/hg19.fa",
+                     ref_infer=gl.get_path("1kg_eas_hg19"),
+                     ref_alt_freq="AF")
