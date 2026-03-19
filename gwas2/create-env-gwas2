@@ -2,3 +2,6 @@ git clone gwas2
 cd gwas2
 conda env create -f environment.yml
 conda activate gwaslab
+cd examples/0_sample_data 
+./download_roadmap.sh
+./download_sample_data.sh
