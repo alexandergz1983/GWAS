@@ -1,3 +1,0 @@
-git clone gwas2
-cd gwas2
-conda env create -f environment.yml
